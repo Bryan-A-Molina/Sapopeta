@@ -1,0 +1,105 @@
+/* =============================
+   VARIABLES (fácil personalizar colores)
+============================= */
+:root{
+    --pink:#ff4d6d;
+    --pink-dark:#c9184a;
+    --bg:#ffe5ec;
+    --white:#fff;
+}
+
+/* RESET */
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-family:'Poppins', sans-serif;
+}
+
+/* FONDO */
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,var(--bg),#ffd6e0);
+}
+
+/* TARJETA */
+.card{
+    background:white;
+    padding:30px;
+    border-radius:25px;
+    text-align:center;
+    width:320px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+    animation:fadeIn .6s ease;
+}
+
+
+.title{
+    font-weight:600;
+    margin-bottom:15px;
+    color:var(--pink-dark);
+}
+
+
+.MELODY img{
+    width:180px;
+    transition:.3s;
+}
+
+
+.text{
+    margin:15px 0;
+    font-size:14px;
+    min-height:30px;
+}
+
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+}
+
+.button{
+    padding:10px 18px;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+    transition:.2s;
+    font-weight:600;
+}
+
+
+.positive{
+    background:var(--pink);
+    color:white;
+}
+
+.positive:hover{
+    transform:scale(1.1);
+}
+
+
+.negative{
+    background:white;
+    border:2px solid var(--pink);
+    color:var(--pink);
+}
+
+
+.error{
+    display:none;
+    width:100%;
+    margin-top:10px;
+    background:gray;
+    color:white;
+}
+
+
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1; transform:translateY(0);}
+}
